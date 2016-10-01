@@ -114,6 +114,9 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="facebookLoginTapped:" destination="y5T-8s-a69" eventType="touchUpInside" id="swR-Z8-AdR"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="LrW-Zz-Bri">
                                                 <constraints>
@@ -181,7 +184,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYe-3T-CuW" customClass="CustomButton" customModule="Shine" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.99430149793624878" green="0.6916014552116394" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,6 +201,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="y5T-8s-a69" eventType="touchUpInside" id="xIk-wb-mht"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkW-pE-8vP">
                                         <constraints>
@@ -241,6 +247,10 @@
                             <constraint firstItem="VrX-pr-R4m" firstAttribute="leading" secondItem="2LR-Tr-7KD" secondAttribute="leading" constant="20" id="oQO-Iy-uJi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="zer-uX-Zbs" id="LHo-eh-wUP"/>
+                        <outlet property="passwordTextField" destination="SLL-9d-SKI" id="8H7-TR-Wob"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hp4-xU-qBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

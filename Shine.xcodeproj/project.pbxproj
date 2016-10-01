@@ -16,6 +16,8 @@
 		425131191D9DF77600CAC5CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425131171D9DF77600CAC5CF /* LaunchScreen.storyboard */; };
 		425131241D9DF77600CAC5CF /* ShineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425131231D9DF77600CAC5CF /* ShineTests.swift */; };
 		4251312F1D9DF77600CAC5CF /* ShineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251312E1D9DF77600CAC5CF /* ShineUITests.swift */; };
+		425B99DF1D9F17760056B75F /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 425B99DC1D9F17760056B75F /* ProgressHUD.bundle */; };
+		425B99E01D9F17760056B75F /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B99DE1D9F17760056B75F /* ProgressHUD.m */; };
 		4290753C1D9DFD2F00A5A776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4290753B1D9DFD2F00A5A776 /* GoogleService-Info.plist */; };
 		42C5C82B1D9E9C4A00ADD21B /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C82A1D9E9C4A00ADD21B /* MaterialButton.swift */; };
 		42C5C82D1D9E9C5A00ADD21B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C82C1D9E9C5A00ADD21B /* MaterialView.swift */; };
@@ -62,6 +64,11 @@
 		4251312A1D9DF77600CAC5CF /* ShineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4251312E1D9DF77600CAC5CF /* ShineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShineUITests.swift; sourceTree = "<group>"; };
 		425131301D9DF77600CAC5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425B99DB1D9F17750056B75F /* Shine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shine-Bridging-Header.h"; sourceTree = "<group>"; };
+		425B99DC1D9F17760056B75F /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		425B99DD1D9F17760056B75F /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		425B99DE1D9F17760056B75F /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		425F43F01D9F6F8F00EB6001 /* Shine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shine.entitlements; sourceTree = "<group>"; };
 		4290753B1D9DFD2F00A5A776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		42C5C82A1D9E9C4A00ADD21B /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		42C5C82C1D9E9C5A00ADD21B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
@@ -148,6 +155,7 @@
 		4251310B1D9DF77600CAC5CF /* Shine */ = {
 			isa = PBXGroup;
 			children = (
+				425F43F01D9F6F8F00EB6001 /* Shine.entitlements */,
 				4251310C1D9DF77600CAC5CF /* AppDelegate.swift */,
 				42C5C8311D9E9CC900ADD21B /* Constants.swift */,
 				4228DBCF1D9DFFE3005342F9 /* Controllers */,
@@ -157,6 +165,10 @@
 				425131171D9DF77600CAC5CF /* LaunchScreen.storyboard */,
 				4290753B1D9DFD2F00A5A776 /* GoogleService-Info.plist */,
 				4251311A1D9DF77600CAC5CF /* Info.plist */,
+				425B99DC1D9F17760056B75F /* ProgressHUD.bundle */,
+				425B99DD1D9F17760056B75F /* ProgressHUD.h */,
+				425B99DE1D9F17760056B75F /* ProgressHUD.m */,
+				425B99DB1D9F17750056B75F /* Shine-Bridging-Header.h */,
 			);
 			path = Shine;
 			sourceTree = "<group>";
@@ -278,7 +290,14 @@
 				TargetAttributes = {
 					425131081D9DF77600CAC5CF = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 565DE2Z895;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					4251311E1D9DF77600CAC5CF = {
 						CreatedOnToolsVersion = 8.0;
@@ -320,6 +339,7 @@
 				425131191D9DF77600CAC5CF /* LaunchScreen.storyboard in Resources */,
 				4290753C1D9DFD2F00A5A776 /* GoogleService-Info.plist in Resources */,
 				425131161D9DF77600CAC5CF /* Assets.xcassets in Resources */,
+				425B99DF1D9F17760056B75F /* ProgressHUD.bundle in Resources */,
 				425131141D9DF77600CAC5CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425B99E01D9F17760056B75F /* ProgressHUD.m in Sources */,
 				425131111D9DF77600CAC5CF /* SecondViewController.swift in Sources */,
 				4251310D1D9DF77600CAC5CF /* AppDelegate.swift in Sources */,
 				4228DBCE1D9DFFBA005342F9 /* SignInVC.swift in Sources */,
@@ -630,10 +651,15 @@
 			baseConfigurationReference = 17EFD00912F94E373137DF7D /* Pods-Shine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Shine/Shine.entitlements;
+				DEVELOPMENT_TEAM = 565DE2Z895;
 				INFOPLIST_FILE = Shine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kouder.Shine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shine/Shine-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -643,10 +669,14 @@
 			baseConfigurationReference = 5E3E3FC7D959DDB632B9126A /* Pods-Shine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Shine/Shine.entitlements;
+				DEVELOPMENT_TEAM = 565DE2Z895;
 				INFOPLIST_FILE = Shine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kouder.Shine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shine/Shine-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
