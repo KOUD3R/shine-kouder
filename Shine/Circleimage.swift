@@ -10,7 +10,7 @@ import UIKit
 
 class circleImage : UIImageView {
     
-    override func draw(_ rect: CGRect) {
+    override func layoutSubviews() {
         layer.cornerRadius = frame.size.width / 2
     }
 }
