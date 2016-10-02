@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		4228DBCE1D9DFFBA005342F9 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228DBCD1D9DFFBA005342F9 /* SignInVC.swift */; };
 		4251310D1D9DF77600CAC5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251310C1D9DF77600CAC5CF /* AppDelegate.swift */; };
-		4251310F1D9DF77600CAC5CF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251310E1D9DF77600CAC5CF /* FirstViewController.swift */; };
-		425131111D9DF77600CAC5CF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425131101D9DF77600CAC5CF /* SecondViewController.swift */; };
+		4251310F1D9DF77600CAC5CF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251310E1D9DF77600CAC5CF /* HomeVC.swift */; };
+		425131111D9DF77600CAC5CF /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425131101D9DF77600CAC5CF /* CameraVC.swift */; };
 		425131141D9DF77600CAC5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425131121D9DF77600CAC5CF /* Main.storyboard */; };
 		425131161D9DF77600CAC5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425131151D9DF77600CAC5CF /* Assets.xcassets */; };
 		425131191D9DF77600CAC5CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425131171D9DF77600CAC5CF /* LaunchScreen.storyboard */; };
@@ -18,13 +18,14 @@
 		4251312F1D9DF77600CAC5CF /* ShineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251312E1D9DF77600CAC5CF /* ShineUITests.swift */; };
 		425B99DF1D9F17760056B75F /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 425B99DC1D9F17760056B75F /* ProgressHUD.bundle */; };
 		425B99E01D9F17760056B75F /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B99DE1D9F17760056B75F /* ProgressHUD.m */; };
+		425D1DB31DA0BB3C006C89D3 /* Circleimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D1DB21DA0BB3C006C89D3 /* Circleimage.swift */; };
 		4290753C1D9DFD2F00A5A776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4290753B1D9DFD2F00A5A776 /* GoogleService-Info.plist */; };
+		429FFBCC1DA07CE200EBD908 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FFBCB1DA07CE200EBD908 /* ProfileVC.swift */; };
+		429FFBCE1DA07D0500EBD908 /* LikesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FFBCD1DA07D0500EBD908 /* LikesVC.swift */; };
 		42C5C82B1D9E9C4A00ADD21B /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C82A1D9E9C4A00ADD21B /* MaterialButton.swift */; };
 		42C5C82D1D9E9C5A00ADD21B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C82C1D9E9C5A00ADD21B /* MaterialView.swift */; };
 		42C5C82F1D9E9C8800ADD21B /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C82E1D9E9C8800ADD21B /* MaterialTextField.swift */; };
 		42C5C8321D9E9CC900ADD21B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C8311D9E9CC900ADD21B /* Constants.swift */; };
-		455FD7B7C4C0BC5234F57454 /* Pods_ShineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94EE397DF63237D37A4B2C0 /* Pods_ShineUITests.framework */; };
-		9AF3FF14F372EFE6B680CF62 /* Pods_ShineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F4102751D113EA57AE8CFB /* Pods_ShineTests.framework */; };
 		A813BC918F4FEED3AB75DBE2 /* Pods_Shine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7A8DAD10ED6B5833324511 /* Pods_Shine.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +53,8 @@
 		4228DBCD1D9DFFBA005342F9 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		425131091D9DF77600CAC5CF /* Shine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4251310C1D9DF77600CAC5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4251310E1D9DF77600CAC5CF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		425131101D9DF77600CAC5CF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4251310E1D9DF77600CAC5CF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		425131101D9DF77600CAC5CF /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		425131131D9DF77600CAC5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		425131151D9DF77600CAC5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425131181D9DF77600CAC5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,17 +69,16 @@
 		425B99DC1D9F17760056B75F /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		425B99DD1D9F17760056B75F /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		425B99DE1D9F17760056B75F /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		425D1DB21DA0BB3C006C89D3 /* Circleimage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circleimage.swift; sourceTree = "<group>"; };
 		425F43F01D9F6F8F00EB6001 /* Shine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shine.entitlements; sourceTree = "<group>"; };
 		4290753B1D9DFD2F00A5A776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		429FFBCB1DA07CE200EBD908 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		429FFBCD1DA07D0500EBD908 /* LikesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesVC.swift; sourceTree = "<group>"; };
 		42C5C82A1D9E9C4A00ADD21B /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		42C5C82C1D9E9C5A00ADD21B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		42C5C82E1D9E9C8800ADD21B /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		42C5C8311D9E9CC900ADD21B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5AFDC8E6DCB042FEA34E98A8 /* Pods-ShineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShineUITests/Pods-ShineUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E3E3FC7D959DDB632B9126A /* Pods-Shine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shine.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shine/Pods-Shine.release.xcconfig"; sourceTree = "<group>"; };
-		A31393B1E37E9666FC43C698 /* Pods-ShineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShineTests/Pods-ShineTests.release.xcconfig"; sourceTree = "<group>"; };
-		CAB5F83D93F95275A4CDB435 /* Pods-ShineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShineTests/Pods-ShineTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E6341F79CA1B219BBE690BD2 /* Pods-ShineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShineUITests/Pods-ShineUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F94EE397DF63237D37A4B2C0 /* Pods_ShineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AF3FF14F372EFE6B680CF62 /* Pods_ShineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455FD7B7C4C0BC5234F57454 /* Pods_ShineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				4228DBCD1D9DFFBA005342F9 /* SignInVC.swift */,
-				4251310E1D9DF77600CAC5CF /* FirstViewController.swift */,
-				425131101D9DF77600CAC5CF /* SecondViewController.swift */,
+				4251310E1D9DF77600CAC5CF /* HomeVC.swift */,
+				429FFBCB1DA07CE200EBD908 /* ProfileVC.swift */,
+				425131101D9DF77600CAC5CF /* CameraVC.swift */,
+				429FFBCD1DA07D0500EBD908 /* LikesVC.swift */,
+				425D1DB21DA0BB3C006C89D3 /* Circleimage.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -157,7 +158,6 @@
 			children = (
 				425F43F01D9F6F8F00EB6001 /* Shine.entitlements */,
 				4251310C1D9DF77600CAC5CF /* AppDelegate.swift */,
-				42C5C8311D9E9CC900ADD21B /* Constants.swift */,
 				4228DBCF1D9DFFE3005342F9 /* Controllers */,
 				42C5C8301D9E9C9000ADD21B /* Material Design */,
 				425131121D9DF77600CAC5CF /* Main.storyboard */,
@@ -194,6 +194,7 @@
 		42C5C8301D9E9C9000ADD21B /* Material Design */ = {
 			isa = PBXGroup;
 			children = (
+				42C5C8311D9E9CC900ADD21B /* Constants.swift */,
 				42C5C82A1D9E9C4A00ADD21B /* MaterialButton.swift */,
 				42C5C82C1D9E9C5A00ADD21B /* MaterialView.swift */,
 				42C5C82E1D9E9C8800ADD21B /* MaterialTextField.swift */,
@@ -206,10 +207,6 @@
 			children = (
 				17EFD00912F94E373137DF7D /* Pods-Shine.debug.xcconfig */,
 				5E3E3FC7D959DDB632B9126A /* Pods-Shine.release.xcconfig */,
-				CAB5F83D93F95275A4CDB435 /* Pods-ShineTests.debug.xcconfig */,
-				A31393B1E37E9666FC43C698 /* Pods-ShineTests.release.xcconfig */,
-				5AFDC8E6DCB042FEA34E98A8 /* Pods-ShineUITests.debug.xcconfig */,
-				E6341F79CA1B219BBE690BD2 /* Pods-ShineUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -301,11 +298,13 @@
 					};
 					4251311E1D9DF77600CAC5CF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 425131081D9DF77600CAC5CF;
 					};
 					425131291D9DF77600CAC5CF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 425131081D9DF77600CAC5CF;
 					};
@@ -488,12 +487,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429FFBCC1DA07CE200EBD908 /* ProfileVC.swift in Sources */,
+				429FFBCE1DA07D0500EBD908 /* LikesVC.swift in Sources */,
 				425B99E01D9F17760056B75F /* ProgressHUD.m in Sources */,
-				425131111D9DF77600CAC5CF /* SecondViewController.swift in Sources */,
+				425131111D9DF77600CAC5CF /* CameraVC.swift in Sources */,
 				4251310D1D9DF77600CAC5CF /* AppDelegate.swift in Sources */,
+				425D1DB31DA0BB3C006C89D3 /* Circleimage.swift in Sources */,
 				4228DBCE1D9DFFBA005342F9 /* SignInVC.swift in Sources */,
 				42C5C82D1D9E9C5A00ADD21B /* MaterialView.swift in Sources */,
-				4251310F1D9DF77600CAC5CF /* FirstViewController.swift in Sources */,
+				4251310F1D9DF77600CAC5CF /* HomeVC.swift in Sources */,
 				42C5C82B1D9E9C4A00ADD21B /* MaterialButton.swift in Sources */,
 				42C5C82F1D9E9C8800ADD21B /* MaterialTextField.swift in Sources */,
 				42C5C8321D9E9CC900ADD21B /* Constants.swift in Sources */,
@@ -683,7 +685,6 @@
 		};
 		425131371D9DF77600CAC5CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAB5F83D93F95275A4CDB435 /* Pods-ShineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -698,7 +699,6 @@
 		};
 		425131381D9DF77600CAC5CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A31393B1E37E9666FC43C698 /* Pods-ShineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -713,7 +713,6 @@
 		};
 		4251313A1D9DF77600CAC5CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AFDC8E6DCB042FEA34E98A8 /* Pods-ShineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ShineUITests/Info.plist;
@@ -727,7 +726,6 @@
 		};
 		4251313B1D9DF77600CAC5CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6341F79CA1B219BBE690BD2 /* Pods-ShineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ShineUITests/Info.plist;

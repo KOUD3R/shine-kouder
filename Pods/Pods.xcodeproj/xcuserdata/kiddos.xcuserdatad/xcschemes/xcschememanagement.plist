@@ -24,12 +24,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ShineTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ShineUITests.xcscheme</key>
+		<key>SwiftKeychainWrapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,12 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E303C3CE7513908EE880D9CA833AFAE</key>
+		<key>0D1220585AE28570B5D680390DF6B6FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E96CD078471C73B45EA4E4EBFFC12D7</key>
+		<key>2E303C3CE7513908EE880D9CA833AFAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81BFC47CEDCC28626EF33274B95EDE4F</key>
+		<key>8DF8C187F75351134F43D15D0CC2C487</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D76F030B5922D9905357ED3B13759085</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EE260845E7A519275070ADEBC506EFD3</key>
+		<key>E52745D0B04FE403742AEFD3D7925593</key>
 		<dict>
 			<key>primary</key>
 			<true/>

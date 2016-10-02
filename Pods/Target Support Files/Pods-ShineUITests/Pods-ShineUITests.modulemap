@@ -1,6 +1,0 @@
-framework module Pods_ShineUITests {
-  umbrella header "Pods-ShineUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

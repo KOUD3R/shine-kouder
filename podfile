@@ -12,15 +12,6 @@ target 'Shine' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
-
-  target 'ShineTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ShineUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'SwiftKeychainWrapper'
 
 end

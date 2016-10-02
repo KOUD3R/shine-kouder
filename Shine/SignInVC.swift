@@ -10,18 +10,26 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
-
+    
     @IBOutlet weak var emailAddressTextField: MaterialTextField!
     @IBOutlet weak var passwordTextField: MaterialTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        UIApplication.shared.statusBarStyle = .lightContent
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.stringForKey(KEY_UID) {
+            performSegue(withIdentifier: "goToHome", sender: nil)
+        }
+    }
+    
     @IBAction func facebookLoginTapped(_ sender: AnyObject) {
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (user, error) in
@@ -43,6 +51,9 @@ class SignInVC: UIViewController {
                 ProgressHUD.showError("Oops, \(error?.localizedDescription)")
             } else {
                 ProgressHUD.showSuccess("Connected to server")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             }
         })
     }
@@ -53,16 +64,28 @@ class SignInVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil {
                     ProgressHUD.showSuccess("Let's go!")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
                             ProgressHUD.showError("Oops, \(error?.localizedDescription)")
                         } else {
                             ProgressHUD.showSuccess("Sign up successful!")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                            }
                         }
                     })
                 }
             })
         }
+    }
+    
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.setString(id, forKey: KEY_UID)
+        print("KOU: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToHome", sender: nil)
     }
 }
