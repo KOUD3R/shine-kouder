@@ -25,6 +25,7 @@
 		429FFBCE1DA07D0500EBD908 /* LikesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FFBCD1DA07D0500EBD908 /* LikesVC.swift */; };
 		42A3DA821DA1634000380439 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DA811DA1634000380439 /* DataService.swift */; };
 		42A3DA851DA1939900380439 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DA841DA1939900380439 /* Post.swift */; };
+		42A3DA871DA1C1E800380439 /* rounded Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3DA861DA1C1E800380439 /* rounded Image.swift */; };
 		42C5C82B1D9E9C4A00ADD21B /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C82A1D9E9C4A00ADD21B /* MaterialButton.swift */; };
 		42C5C82D1D9E9C5A00ADD21B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C82C1D9E9C5A00ADD21B /* MaterialView.swift */; };
 		42C5C82F1D9E9C8800ADD21B /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5C82E1D9E9C8800ADD21B /* MaterialTextField.swift */; };
@@ -80,6 +81,7 @@
 		429FFBCD1DA07D0500EBD908 /* LikesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesVC.swift; sourceTree = "<group>"; };
 		42A3DA811DA1634000380439 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		42A3DA841DA1939900380439 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		42A3DA861DA1C1E800380439 /* rounded Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "rounded Image.swift"; sourceTree = "<group>"; };
 		42C5C82A1D9E9C4A00ADD21B /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		42C5C82C1D9E9C5A00ADD21B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		42C5C82E1D9E9C8800ADD21B /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
@@ -132,7 +134,6 @@
 				429FFBCB1DA07CE200EBD908 /* ProfileVC.swift */,
 				425131101D9DF77600CAC5CF /* CameraVC.swift */,
 				429FFBCD1DA07D0500EBD908 /* LikesVC.swift */,
-				425D1DB21DA0BB3C006C89D3 /* Circleimage.swift */,
 				425D1DB41DA0C223006C89D3 /* PostCell.swift */,
 			);
 			name = Controllers;
@@ -219,10 +220,12 @@
 		42C5C8301D9E9C9000ADD21B /* Material Design */ = {
 			isa = PBXGroup;
 			children = (
+				425D1DB21DA0BB3C006C89D3 /* Circleimage.swift */,
 				42C5C8311D9E9CC900ADD21B /* Constants.swift */,
 				42C5C82A1D9E9C4A00ADD21B /* MaterialButton.swift */,
 				42C5C82C1D9E9C5A00ADD21B /* MaterialView.swift */,
 				42C5C82E1D9E9C8800ADD21B /* MaterialTextField.swift */,
+				42A3DA861DA1C1E800380439 /* rounded Image.swift */,
 			);
 			name = "Material Design";
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 			files = (
 				429FFBCC1DA07CE200EBD908 /* ProfileVC.swift in Sources */,
 				42A3DA821DA1634000380439 /* DataService.swift in Sources */,
+				42A3DA871DA1C1E800380439 /* rounded Image.swift in Sources */,
 				429FFBCE1DA07D0500EBD908 /* LikesVC.swift in Sources */,
 				425D1DB51DA0C223006C89D3 /* PostCell.swift in Sources */,
 				425B99E01D9F17760056B75F /* ProgressHUD.m in Sources */,

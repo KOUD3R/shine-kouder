@@ -10,11 +10,13 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var addImage: UIImageView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,10 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
         
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
@@ -60,6 +66,22 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         } else {
             return PostCell()
         }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            addImage.image = image
+        } else {
+            ProgressHUD.showError("A valid image wasn't selected")
+        }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func addImageTapped(_ sender: AnyObject) {
+
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     func moveToLastMessage() {

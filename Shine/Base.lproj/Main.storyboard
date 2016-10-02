@@ -40,15 +40,10 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Prv-c8-dMs" customClass="MaterialView" customModule="Shine" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon_snap" translatesAutoresizingMaskIntoConstraints="NO" id="94d-8l-dZt">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="JMo-R8-dxe"/>
-                                        </constraints>
-                                    </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What's up?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6tA-0R-IBj" customClass="MaterialTextField" customModule="Shine" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="fBt-am-FTw"/>
+                                            <constraint firstAttribute="height" constant="49" id="Fes-kI-sgv"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
@@ -57,7 +52,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZt-52-XGu" customClass="CustomButton" customModule="Shine" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.0" green="0.6619894476" blue="0.53674753669999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="ZaC-Dh-Syr"/>
+                                            <constraint firstAttribute="height" constant="37" id="L27-wR-Adz"/>
+                                            <constraint firstAttribute="width" constant="50" id="kCJ-1c-fLu"/>
                                         </constraints>
                                         <state key="normal" title="Post">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,18 +64,27 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon_snap" translatesAutoresizingMaskIntoConstraints="NO" id="tGK-9u-zsm" customClass="roundedImage" customModule="Shine" customModuleProvider="target">
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="SAR-tp-g8G"/>
+                                            <constraint firstAttribute="height" constant="37" id="oJF-WO-pnT"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="fY0-IE-nWi" appends="YES" id="U8D-im-wjh"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="2Ry-bF-CAd"/>
-                                    <constraint firstItem="TZt-52-XGu" firstAttribute="leading" secondItem="6tA-0R-IBj" secondAttribute="trailing" constant="7" id="3S1-VE-iYy"/>
-                                    <constraint firstItem="6tA-0R-IBj" firstAttribute="bottom" secondItem="TZt-52-XGu" secondAttribute="bottom" constant="3" id="73M-Lm-rp8"/>
-                                    <constraint firstItem="94d-8l-dZt" firstAttribute="centerY" secondItem="Prv-c8-dMs" secondAttribute="centerY" constant="2" id="9KR-ub-0gN"/>
-                                    <constraint firstItem="6tA-0R-IBj" firstAttribute="leading" secondItem="94d-8l-dZt" secondAttribute="trailing" constant="16" id="ZuO-IV-rds"/>
-                                    <constraint firstItem="94d-8l-dZt" firstAttribute="leading" secondItem="Prv-c8-dMs" secondAttribute="leadingMargin" constant="5" id="dyx-Dv-Ebc"/>
-                                    <constraint firstItem="94d-8l-dZt" firstAttribute="bottom" secondItem="Prv-c8-dMs" secondAttribute="bottomMargin" constant="2" id="f8f-rp-hUY"/>
-                                    <constraint firstItem="TZt-52-XGu" firstAttribute="trailing" secondItem="Prv-c8-dMs" secondAttribute="trailingMargin" id="fmB-aN-poa"/>
-                                    <constraint firstItem="6tA-0R-IBj" firstAttribute="centerY" secondItem="Prv-c8-dMs" secondAttribute="centerY" constant="3" id="nyV-jF-jLQ"/>
+                                    <constraint firstItem="TZt-52-XGu" firstAttribute="top" secondItem="Prv-c8-dMs" secondAttribute="top" constant="14" id="EEE-OP-6fP"/>
+                                    <constraint firstItem="6tA-0R-IBj" firstAttribute="top" secondItem="Prv-c8-dMs" secondAttribute="top" constant="8" id="HOa-Np-OAT"/>
+                                    <constraint firstItem="tGK-9u-zsm" firstAttribute="top" secondItem="Prv-c8-dMs" secondAttribute="top" constant="14" id="Jfx-lv-Y1y"/>
+                                    <constraint firstItem="TZt-52-XGu" firstAttribute="leading" secondItem="6tA-0R-IBj" secondAttribute="trailing" constant="8" id="ccV-Ot-rga"/>
+                                    <constraint firstItem="6tA-0R-IBj" firstAttribute="leading" secondItem="tGK-9u-zsm" secondAttribute="trailing" constant="7" id="kNk-de-SUW"/>
+                                    <constraint firstItem="tGK-9u-zsm" firstAttribute="leading" secondItem="Prv-c8-dMs" secondAttribute="leading" constant="6" id="nJT-Va-kwX"/>
+                                    <constraint firstAttribute="trailing" secondItem="TZt-52-XGu" secondAttribute="trailing" constant="5" id="rdj-E2-SLF"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="341" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SZY-OP-xRx">
@@ -197,10 +202,16 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="Home" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="addImage" destination="tGK-9u-zsm" id="0Ll-zQ-xTC"/>
                         <outlet property="tableView" destination="SZY-OP-xRx" id="WFe-LU-Me0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fY0-IE-nWi">
+                    <connections>
+                        <action selector="addImageTapped:" destination="9pv-A4-QxB" id="oSs-mY-Mv5"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
@@ -286,16 +297,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnH-ro-g6f" customClass="CustomButton" customModule="Shine" customModuleProvider="target">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="KOH-eE-fpW"/>
-                                    <constraint firstAttribute="width" constant="31" id="urw-dK-i10"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="createsnap_btn"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDJ-bE-7b1" customClass="CustomButton" customModule="Shine" customModuleProvider="target">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="29" id="9eL-OD-Be9"/>
+                                    <constraint firstAttribute="width" constant="29" id="O2c-23-HRN"/>
+                                    <constraint firstAttribute="height" constant="30" id="dgJ-Nj-lnm"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="camera_icon_snap"/>
                             </button>
@@ -311,16 +316,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnH-ro-g6f" customClass="CustomButton" customModule="Shine" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KOH-eE-fpW"/>
+                                    <constraint firstAttribute="width" constant="31" id="urw-dK-i10"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="createsnap_btn"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DK4-5x-tw8" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="16" id="Jds-8y-Rat"/>
-                            <constraint firstItem="GDJ-bE-7b1" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="P3D-Df-9nS"/>
+                            <constraint firstAttribute="trailing" secondItem="GDJ-bE-7b1" secondAttribute="trailing" constant="16" id="OT4-Tw-bMW"/>
                             <constraint firstItem="KnH-ro-g6f" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="RZS-hM-bGg"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="KnH-ro-g6f" secondAttribute="bottom" constant="20" id="TC8-iV-DMj"/>
                             <constraint firstItem="DK4-5x-tw8" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="14" id="jf9-tp-HWd"/>
-                            <constraint firstItem="GDJ-bE-7b1" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="14" id="l6e-az-ta1"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="GDJ-bE-7b1" secondAttribute="bottom" constant="572" id="nRv-yf-i8C"/>
+                            <constraint firstItem="GDJ-bE-7b1" firstAttribute="centerY" secondItem="DK4-5x-tw8" secondAttribute="centerY" id="y6d-eX-EXY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="camera" selectedImage="camera" id="cPa-gy-q4n"/>
@@ -566,7 +577,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="0fd-wx-4te" kind="relationship" relationship="viewControllers" id="H15-AF-8wd"/>
                         <segue destination="VUi-5C-f0O" kind="relationship" relationship="viewControllers" id="RaF-ti-34n"/>
                     </connections>
