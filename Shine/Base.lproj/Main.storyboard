@@ -40,6 +40,11 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Prv-c8-dMs" customClass="MaterialView" customModule="Shine" customModuleProvider="target">
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon_snap" translatesAutoresizingMaskIntoConstraints="NO" id="94d-8l-dZt">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="JMo-R8-dxe"/>
+                                        </constraints>
+                                    </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What's up?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6tA-0R-IBj" customClass="MaterialTextField" customModule="Shine" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -50,12 +55,12 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZt-52-XGu" customClass="CustomButton" customModule="Shine" customModuleProvider="target">
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.6619894476" blue="0.53674753669999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="ZaC-Dh-Syr"/>
                                         </constraints>
                                         <state key="normal" title="Post">
-                                            <color key="titleColor" red="0.0" green="0.6619894476" blue="0.53674753669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -63,21 +68,16 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon_snap" translatesAutoresizingMaskIntoConstraints="NO" id="94d-8l-dZt">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="JMo-R8-dxe"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="2Ry-bF-CAd"/>
-                                    <constraint firstItem="TZt-52-XGu" firstAttribute="leading" secondItem="6tA-0R-IBj" secondAttribute="trailing" constant="-1" id="3S1-VE-iYy"/>
+                                    <constraint firstItem="TZt-52-XGu" firstAttribute="leading" secondItem="6tA-0R-IBj" secondAttribute="trailing" constant="7" id="3S1-VE-iYy"/>
                                     <constraint firstItem="6tA-0R-IBj" firstAttribute="bottom" secondItem="TZt-52-XGu" secondAttribute="bottom" constant="3" id="73M-Lm-rp8"/>
-                                    <constraint firstItem="94d-8l-dZt" firstAttribute="centerY" secondItem="Prv-c8-dMs" secondAttribute="centerY" id="9KR-ub-0gN"/>
-                                    <constraint firstItem="6tA-0R-IBj" firstAttribute="leading" secondItem="94d-8l-dZt" secondAttribute="trailing" constant="14" id="ZuO-IV-rds"/>
-                                    <constraint firstItem="94d-8l-dZt" firstAttribute="leading" secondItem="Prv-c8-dMs" secondAttribute="leadingMargin" constant="15" id="dyx-Dv-Ebc"/>
-                                    <constraint firstItem="94d-8l-dZt" firstAttribute="bottom" secondItem="Prv-c8-dMs" secondAttribute="bottomMargin" id="f8f-rp-hUY"/>
+                                    <constraint firstItem="94d-8l-dZt" firstAttribute="centerY" secondItem="Prv-c8-dMs" secondAttribute="centerY" constant="2" id="9KR-ub-0gN"/>
+                                    <constraint firstItem="6tA-0R-IBj" firstAttribute="leading" secondItem="94d-8l-dZt" secondAttribute="trailing" constant="16" id="ZuO-IV-rds"/>
+                                    <constraint firstItem="94d-8l-dZt" firstAttribute="leading" secondItem="Prv-c8-dMs" secondAttribute="leadingMargin" constant="5" id="dyx-Dv-Ebc"/>
+                                    <constraint firstItem="94d-8l-dZt" firstAttribute="bottom" secondItem="Prv-c8-dMs" secondAttribute="bottomMargin" constant="2" id="f8f-rp-hUY"/>
                                     <constraint firstItem="TZt-52-XGu" firstAttribute="trailing" secondItem="Prv-c8-dMs" secondAttribute="trailingMargin" id="fmB-aN-poa"/>
                                     <constraint firstItem="6tA-0R-IBj" firstAttribute="centerY" secondItem="Prv-c8-dMs" secondAttribute="centerY" constant="3" id="nyV-jF-jLQ"/>
                                 </constraints>

@@ -161,9 +161,9 @@
 		4251310B1D9DF77600CAC5CF /* Shine */ = {
 			isa = PBXGroup;
 			children = (
-				42A3DA801DA1632E00380439 /* Services */,
 				425F43F01D9F6F8F00EB6001 /* Shine.entitlements */,
 				4251310C1D9DF77600CAC5CF /* AppDelegate.swift */,
+				42A3DA801DA1632E00380439 /* Services */,
 				4228DBCF1D9DFFE3005342F9 /* Controllers */,
 				42C5C8301D9E9C9000ADD21B /* Material Design */,
 				425131121D9DF77600CAC5CF /* Main.storyboard */,
@@ -668,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17EFD00912F94E373137DF7D /* Pods-Shine.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Shine/Shine.entitlements;
@@ -686,6 +687,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E3E3FC7D959DDB632B9126A /* Pods-Shine.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Shine/Shine.entitlements;

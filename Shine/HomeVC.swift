@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -14,11 +16,20 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         UIApplication.shared.statusBarStyle = .default
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            print(snapshot.value)
+        })
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIApplication.shared.isStatusBarHidden = false
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
