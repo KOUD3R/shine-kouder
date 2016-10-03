@@ -63,6 +63,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="postTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="LDe-6a-KCn"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon_snap" translatesAutoresizingMaskIntoConstraints="NO" id="tGK-9u-zsm" customClass="roundedImage" customModule="Shine" customModuleProvider="target">
                                         <gestureRecognizers/>
@@ -202,6 +205,7 @@
                     <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="Home" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="addImage" destination="tGK-9u-zsm" id="0Ll-zQ-xTC"/>
+                        <outlet property="captionField" destination="6tA-0R-IBj" id="exz-xa-4VR"/>
                         <outlet property="tableView" destination="SZY-OP-xRx" id="WFe-LU-Me0"/>
                     </connections>
                 </viewController>

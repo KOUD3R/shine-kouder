@@ -14,10 +14,12 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var addImage: UIImageView!
+    @IBOutlet weak var captionField: MaterialTextField!
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    var imageSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +81,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             addImage.image = image
+            imageSelected = true
         } else {
             ProgressHUD.showError("A valid image wasn't selected")
         }
@@ -89,6 +92,34 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     @IBAction func addImageTapped(_ sender: AnyObject) {
         
         self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func postTapped(_ sender: AnyObject) {
+        guard let caption = captionField.text, caption != "" else {
+            ProgressHUD.showError("A caption must be entered")
+            return
+        }
+        
+        guard let img = addImage.image, imageSelected == true else {
+            ProgressHUD.showError("A image must be selected")
+            return
+        }
+        
+        if let imageData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            let imgUid = NSUUID().uuidString
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/jpeg"
+            
+            DataService.ds.REF_POST_IMAGES.child(imgUid).put(imageData, metadata: metadata) { (metadata, error) in
+                if error != nil {
+                    ProgressHUD.showError("Unable to post")
+                } else {
+                    ProgressHUD.showSuccess("Successfully posted")
+                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                }
+            }
+        }
     }
     
     func moveToLastMessage() {
